@@ -1,0 +1,27 @@
+.modal{
+	display: none;
+	overflow: auto;
+	z-index: 1;
+	position:fixed;
+	top:5%;
+	left:30%;
+	width: 40%;
+	background-color:#3366ff ;
+}
+/*Boton para cerrar el modal box*/
+.close {
+    color: #aaa;
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+	color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+form{
+	margin: 10px;
+}
