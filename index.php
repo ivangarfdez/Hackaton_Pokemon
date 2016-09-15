@@ -1,3 +1,3 @@
 <?php
-    echo ("Bienvenidos a Pokemon Daw.");
+    require('./View/signin.html');
 ?>
