@@ -15,6 +15,14 @@
 	</head>
 
 	<body>
+			
+	    <meta charset = "UTF-8"/>
+	    <title>Pokémon DAW</title>
+	    <!--  
+	    Insertar Favicon
+	    <link rel="shortcut icon" type="image/x-icon" href="app/view/img/favicon.gif"/> 
+		-->
+	    <link href='view/css/css2.css' rel='stylesheet' type='text/css'>
 		  	<img class="logo" src="view/img/logo.png" alt="logo">
 			<div class="menu">	
 				<nav>

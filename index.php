@@ -1,3 +1,9 @@
 <?php
-    require('./View/signin.html');
+	require('./View/header.php');
+
+
+
+
+
+	require('View/footer.php');
 ?>
