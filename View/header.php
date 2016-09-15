@@ -1,5 +1,5 @@
 <html>
-	<head>
+	<head> 
 		<meta charset = "UTF-8"/>
 	    <title>Pokémon DAW</title>
 	    <!--  
@@ -25,7 +25,6 @@
 						<li><a href="#">Financiación</a></li>
 						<li><a href="#">Smartwatch</a></li>
 						<li class="alex"><a href="#">  </a></li>
-
 					</ul>
 				</nav>
 			</div>

@@ -4,6 +4,5 @@
 
 	require('View/carousel.html');
 
-
 	require('View/footer.php');
 ?>
