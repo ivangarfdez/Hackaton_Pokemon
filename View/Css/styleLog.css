@@ -1,0 +1,29 @@
+
+#caja {
+
+border-radius: 144px 0px 200px 4px;
+-moz-border-radius: 144px 0px 200px 4px;
+-webkit-border-radius: 144px 0px 200px 4px;
+border: 5px solid #ffffff;
+box-shadow: 0 0 18px black;
+border-top-style: dashed;
+width: 50%;
+background-image: url(https://www.google.es/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwj3hbGM7JDPAhUCNhoKHbLWCtoQjBwIBA&url=http%3A%2F%2Fwallpapercave.com%2Fwp%2FUTEF6XR.png&bvm=bv.132479545,d.d2s&psig=AFQjCNE-_xi303YAF2_B0jUya8dsr9LFcw&ust=1474010746148861);
+margin-top: 350px;
+margin-left: 320px;
+
+
+}
+
+.margen{
+
+margin-left: 100px;
+
+
+}
+
+body {
+    background-image: url(http://i.imgur.com/DMuiwSN.jpg);
+}
+
+https://s3.amazonaws.com/www.cornflix.tv/channel-art/pokemon/pokemon-intro-bg-3.png
