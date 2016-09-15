@@ -1,0 +1,41 @@
+.estructuraNoticia{}
+.noticiaDerecha,.noticiaIzquierda{
+  display: inline;
+  max-height: 500px;
+}
+.noticiaDerecha{
+  width: 60%;
+  float: left;
+}
+.noticiaIzquierda{
+  width: 40%;
+  float: left;
+  
+}
+
+.imgNoticia{
+  width: 200px;
+  height: 200px;
+  padding-left: 15px
+}
+.fechaNoticia{
+  display: inline;
+}
+.subNoticiaIzquierda{
+  display: inline-block;
+  margin-left: 30px; 
+  vertical-align: top ;
+}
+.cuerpoNoticia{
+  width: 90%;
+}
+.categoriaNoticia{
+  float: right;
+  margin-right: 50px ; 
+}
+.cuerpoNoticia{
+  margin-top: 50px;
+}
+.cuerpoNoticia,.valoracion{
+  margin-left: 15px;
+}
