@@ -1,11 +1,15 @@
+#conjuntoLogin{
+	position: fixed;
+	top:-20px;
+	right: 25px;
+}
 .modal{
 	display: none;
-	overflow: auto;
 	z-index: 1;
-	position:fixed; 
-	top:5%;
-	left:30%;
+	margin-top: -25px;
 	padding: 25px;
+	padding-bottom: 5px;
+	padding-top: 5px;
 	background-color:#ddd ;
 	border-radius: 25px; 
 }
@@ -49,4 +53,12 @@ height:50px;}
 .activo{
 	background-color: #ddd;
 	z-index: 2;
+}
+#mostrar{
+	font-size: 15pt;
+	background:#808080;
+	padding: 10px;
+	border-radius:  10px;
+	color: white;
+	cursor: pointer;
 }
