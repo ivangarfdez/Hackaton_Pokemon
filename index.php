@@ -1,8 +1,10 @@
 <?php
-	require('./View/header.php');
 
+	//require('view/pages/inicio.php');
 
-	require('View/carousel.html');
+	require('view/pages/header.php');
 
-	require('View/footer.php');
+	require('view/pages/carousel.php');
+
+	//require('view/pages/footer.php');
 ?>
