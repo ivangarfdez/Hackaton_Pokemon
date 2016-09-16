@@ -5,8 +5,9 @@
 	position:fixed; 
 	top:5%;
 	left:30%;
-	width: 40%;
-	background-color:#3366ff ;
+	padding: 25px;
+	background-color:#ddd ;
+	border-radius: 25px; 
 }
 /*Boton para cerrar el modal box*/
 .close {
@@ -23,9 +24,29 @@
     text-decoration: none;
     cursor: pointer;
 }
-#registro{
-	float: right;
+
+
+#registro,#login{
+display: block;
+	overflow: auto;
+	text-align: center
 }
-#login{
-	float: left;	
+
+ul{
+	display: inline-block;
+	list-style: none;
+	overflow: hidden;
+	max-height: 35px;
+}
+ul li{
+float: left;
+padding: 10px;
+background-color:#808080;
+	border-radius: 20px;
+box-shadow: 0 10px 20px rgba(0,0,0,.5);
+height:50px;}
+
+.activo{
+	background-color: #ddd;
+	z-index: 2;
 }
