@@ -7,9 +7,9 @@
 
 	<body>
 		<div class="equipo">
-			<img src="view/img/amarillo.png" alt="instinct">
-			<img src="view/img/rojo.png" alt="valor">
-			<img src="view/img/azul.png" alt="mystic">
+			<a href="?equipo=amarillo"><img src="view/img/amarillo.png" alt="instinct"></a>
+			<a href="?equipo=rojo"><img src="view/img/rojo.png" alt="valor"></a>
+			<a href="?equipo=azul"><img src="view/img/azul.png" alt="mystic"></a>
 
 		</div>
 	</body>

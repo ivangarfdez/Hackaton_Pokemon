@@ -11,9 +11,25 @@
 
 	</head>
 
-	<body>
+	<body
+		<?php
+			switch ($_GET["equipo"]) {
+				case 'rojo':
+				echo "background ='View/img/rojo.png'>";
+				break;
+				case 'azul':
+				echo "background ='View/img/azul.png'>";
+				break;
+				case 'amarillo':
+				echo "background ='View/img/amarillo.png'>";
+				break;
+				default:
+				echo "";
+			}
+		?>
 		<div>
-		  	<img class="logo" src="view/img/pokemonDAW.png" alt="logo">
+
+		  	<a href="index.php"><img class='logo' src='view/img/pokemonDAW.png' alt='logo'></a>
 			<div class="menu">	
 				<nav>
 					<ul>
