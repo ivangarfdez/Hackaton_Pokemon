@@ -1,0 +1,44 @@
+.estructuraNoticia{
+  overflow:auto; 
+  background-color:rgba(1, 102, 255,0.5);
+  border:5x solid white;
+  border-radius:55px;
+  padding-bottom:15px
+}
+.noticiaDerecha,.noticiaIzquierda{
+  display: block;
+  max-height: 500px;
+}
+.noticiaDerecha{
+  float: right;
+  width: 70%;
+}
+.noticiaIzquierda{
+  width: 20%;
+  
+  float: left;
+}
+.tituloNoticia{
+  
+  margin-top: 50px;
+  margin-bottom: 2
+}
+
+.imgNoticia{
+  width: 140%;
+  height: 40%;
+  margin-top: 152px;
+  margin-left: 5%
+}
+.fechaNoticia{
+  display: inline;
+}
+
+.cuerpoNoticia{
+}
+.categoriaNoticia{
+  float: right;
+  margin-right: 50px ; 
+}
+
+
