@@ -5,5 +5,6 @@
 		</div>
     <script src="view/Js/carousel.js"></script>
     <script src="view/Js/modal.js"></script>
+		<script src="view/Js/filtrado.js"></script>
 	</body>
 </html>
