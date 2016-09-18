@@ -4,7 +4,7 @@
 
 		public function conectar() {
 			if(!isset($this->conexion)) {
-				$this->conexion = (mysqli_connect("52.40.51.180", "admin", "@dministrador.1", "proyecto")) or die(mysqli_error());
+				$this->conexion = (mysqli_connect("54.70.107.235", "root", "", "DAWPOKEMONGO")) or die(mysqli_error());
 				mysqli_set_charset($this->conexion, "utf8");
 			}
 		}
