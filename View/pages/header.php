@@ -6,7 +6,13 @@
 	    <link href='view/css/footer.css' rel='stylesheet' type='text/css'>
 	    <link href='view/css/login.css' rel='stylesheet' type='text/css'>
 	   	<link href='view/css/carousel.css' rel='stylesheet' type='text/css'>
-			<link href='view/css/styleEstructuraNoticia.css' rel='stylesheet' type='text/css'>
+			<?php
+			if(isset($_GET["id"])){
+				echo"<link href='view/css/styleEstructuraNoticia.css' rel='stylesheet' type='text/css'>";
+			}else{
+				echo"<link href='view/css/styleNoticiaDetalle.css' rel='stylesheet' type='text/css'>";
+			}
+			 ?>
 
 	</head>
 
