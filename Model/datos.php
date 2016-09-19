@@ -4,7 +4,7 @@
 	$conexion = new mysqli($cfg_servidor,$cfg_usuario,$cfg_password,$cfg_basephp1);
 
 
-	function obtenerCincoUltimasNoticias(){
+	function obtenerCincoUltimasNoticias($conexion){
 		$articulos = array();
 		$sentencia = "SELECT titulo, descripcion, fecha, imagen , nombre as categoria,  FROM Articulos litmit 5";
 		$resultado=mysqli_query($conexion, $sentencia);
@@ -16,5 +16,5 @@
 }
 
 
-obtenerCincoUltimasNoticias();
+obtenerCincoUltimasNoticias($conexion);
 ?>
