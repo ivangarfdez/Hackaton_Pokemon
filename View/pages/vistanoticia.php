@@ -1,9 +1,8 @@
 <?php
 function modeloNoticia($id,$titulo, $imagen, $fecha, $categoria, $cuerpo,$valoracion){
-    $equipo=$_COOKIE["equipo"];
     echo"
     <div class='estructuraNoticia $categoria'>
-    <a href='./index.php?id=$id&equipo=$equipo' style='color:black;text-decoration:none;'>
+    <a href='./index.php?id=$id' style='color:black;text-decoration:none;'>
         <div class='noticiaIzquierda'>
           <img src='".$imagen."' alt='imagen no disponible' class='imgNoticia'/>
         </div>
