@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 
 $nombre = ($_POST["name"]);
 $password = ($_POST["password"]);
@@ -11,6 +12,8 @@ $sentencia="INSERT INTO Usuario (nombre,password,email) VALUES
 require('../Model/database.php');
 $objeto=new mysqli($cfg_servidor,$cfg_usuario,$cfg_password,$cfg_basephp1);
 if($objeto->query($sentencia)){
+$_SESSION['login_user'] = true;
+header('Location: ../index.php');
 
     print "<br>Se ha insertado un registro en la base de datos<br>";
 }else{

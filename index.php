@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
 		require('Model/datos.php');
 		require('view/pages/header.php');
-		//require('view/pages/carousel.php');
+		require('view/pages/carousel.php');
 		require('view/pages/vistanoticia.php');
 
 		if(isset($_GET["id"])){
