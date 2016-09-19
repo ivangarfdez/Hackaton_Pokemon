@@ -7,7 +7,6 @@
 
 //cargar 5 ultimsa noticias
 
-include();//incluir funciones de conexion y obtención de datos de la base de datos de aws;
 $noticias=obtenerCincoUltimasNoticias();
 foreach ($noticia => $noticias) {
 	modeloNoticia($noticia.titulo,$noticia.imagen,$noticia.fecha,$noticia.categoria,$noticia.descripcion,$noticia.valoracion);
