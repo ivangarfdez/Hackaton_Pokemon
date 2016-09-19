@@ -28,8 +28,7 @@ function modeloNoticia($id,$titulo, $imagen, $fecha, $categoria, $cuerpo,$valora
 
 function modeloMiniNoticia($id,$titulo, $imagen, $fecha, $categoria, $cuerpo,$valoracion){
 
-    echo"
-    <div class='estructuraMiniNoticia $categoria'>
+    echo"<div class='estructuraMiniNoticia $categoria'>
     <a href='./index.php?id=$id' style='color:black;text-decoration:none;'>
         <div class='noticiaMiniIzquierda'>
           <img src='".$imagen."' alt='imagen no disponible' class='imgMiniNoticia'/>
