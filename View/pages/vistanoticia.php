@@ -1,4 +1,5 @@
 <?php
+
   function modeloNoticia($titulo, $imagen, $fecha, $categoria, $cuerpo,$valoracion){
     echo "<div class='estructuraNoticia $categoria' >
         <div class='noticiaIzquierda'>
@@ -21,6 +22,8 @@
     echo "</div>
         </div>
     </div>";
+
+
   }
 
  ?>
