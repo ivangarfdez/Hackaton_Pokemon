@@ -8,9 +8,9 @@
 //cargar 5 ultimsa noticias
 
 $noticias=obtenerCincoUltimasNoticias();
-foreach ($noticia => $noticias) {
-	modeloNoticia($noticia.titulo,$noticia.imagen,$noticia.fecha,$noticia.categoria,$noticia.descripcion,$noticia.valoracion);
-}
+//foreach ($noticia => $noticias) {
+//	modeloNoticia($noticia.titulo,$noticia.imagen,$noticia.fecha,$noticia.categoria,$noticia.descripcion,$noticia.valoracion);
+//}
 	require('view/pages/footer.php');
 	}else {
 		require('view/pages/inicio.php');

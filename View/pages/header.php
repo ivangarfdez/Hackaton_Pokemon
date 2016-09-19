@@ -47,17 +47,15 @@
 							<li id="btnregistrar" class="">registro</li></ul>
 
 						<form action="asdg.php" id="login">
-							<input type="text" placeholder="E-mail"><br/>
-							<input type="text" placeholder="password"><br/>
+							<input type="text" name="loginemail" placeholder="E-mail"><br/>
+							<input type="text" name="loginpassword" placeholder="password"><br/>
 							<input type="submit" name="login" value="Entrar">
 						</form>
 
-						<form action="asdg.php" id="registro">
-							<input type="text" placeholder="nombre"><br/>
-							<input type="text" placeholder="usuario"><br/>
-							<input type="text" placeholder="password"><br/>
-							<input type="text" placeholder="E-mail"><br/>
-							<input type="text" placeholder="fecha nacimiento"><br/>
+						<form  action="Controller/login.php" id="registro" method="post">
+							<input type="text" name="name" placeholder="nombre"><br/>
+							<input type="text" name="password" placeholder="password"><br/>
+							<input type="text" name="email" placeholder="E-mail"><br/>
 							<input type="submit" name="registrar" value="registrar">
 						</form>
 
