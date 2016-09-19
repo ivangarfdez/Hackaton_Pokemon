@@ -1,86 +1,113 @@
-/* Contenedor general */
-#slider-wrapper {
-  position: relative;
-  overflow: hidden;
+input[name="slider-select-element"] {
+  display: none;
+}
+
+#slider-arrows {
+  margin: -30% auto 0 auto;
   width: 80%;
-  max-width: 100%;
-  margin: 5% auto;
-  padding: 0 10px;
-  font-family: arial, sans-serif;
-  font-size: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* Contenedor slider */
-#slider { 
-  position: relative;
-  width: 100%;
-  padding-bottom: 50%; /* Aspect ratio */
-  overflow: hidden;
-  border-radius: 5%/10%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-#slider > a {
-  position:absolute;
-  top:0;
-  left:0;
-  width: 100%;
-  min-height: 100%;
-}
-/* Ajuste de las imágenes */
-#slider img {
-  width: 100%;
-  min-height: 100%;
-  position: absolute;
-  margin:0;
-  padding:0; 
-  border:0;
 }
 
-/* Flechas de navegación */
-/* Flechas de navegación */
-a.mas, a.menos {
-position: absolute;
-top: 50%;
-left: 0px;
-z-index: 10;
-width: 20px;
-height: 30px;
-text-align: center;
-line-height: 30px;
-font-size: 30px;
-color: white;
-background: #333;
-text-decoration: none;
-transition: .5s margin ease;
-}
-a.mas {
-left: 100%;
-margin-left: 100px;
-}
-#slider-wrapper:hover a.mas {
-margin-left: -40px;
-}
-a.menos {
-left: 0;
-margin-left: -100px;
-}
-#slider-wrapper:hover a.menos {
-margin-left: 20px;
-}
-
-/* CODIGO NO NECESARIO. SÓLO INCLUIDO PARA ESTILO DE LA PRESENTACION */
-html {
-  width: 100%;
+#slider-box {
   height: 100%;
+  width: 300%;
+}
+
+#slider-container {
+
+  height: 100%;
+  margin-bottom: 200px;
+  overflow: hidden;
+  text-align: left;
+  width: 80%;
+  margin-left: 120px;
 
 }
-#slider-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+.element-blue,
+.element-green,
+.element-red {
+  min-height: 400px;
+  max-height: 100%;
+  width: 100%;
 }
+
+.element-blue {
+  background: blue  ;
+}
+
+.element-green {
+  background: green  ;
+}
+
+.element-red {
+  background: red  ;
+}
+
+.slider-element {
+  float: left;
+  width: 33.333%;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(2),
+#element2:checked ~ #slider-arrows label:nth-child(3),
+#element3:checked ~ #slider-arrows label:nth-child(1) {
+  display: block;
+  float: right;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(3),
+#element2:checked ~ #slider-arrows label:nth-child(1),
+#element3:checked ~ #slider-arrows label:nth-child(2) {
+  display: block;
+  float: left;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(2):before,
+#element2:checked ~ #slider-arrows label:nth-child(3):before,
+#element3:checked ~ #slider-arrows label:nth-child(1):before {
+  color: black  ;
+  content: "\f054";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(3):before,
+#element2:checked ~ #slider-arrows label:nth-child(1):before,
+#element3:checked ~ #slider-arrows label:nth-child(2):before {
+  color: black  ;
+  content: "\f053";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+#element1:checked ~ #slider-container #slider-box {
+  margin-left: 0;
+}
+
+#element2:checked ~ #slider-container #slider-box {
+  margin-left: -100%;
+}
+
+#element3:checked ~ #slider-container #slider-box {
+  margin-left: -200%;
+}
+
+#slider-arrows label {
+  color: transparent;
+  cursor: pointer;
+  display: none;
+  font-size: 2rem;
+  height: 20px;
+  width: 20px;
+}
+
+#slider-box {
+  -webkit-transition: all 0.75s ease;

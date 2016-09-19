@@ -9,10 +9,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
     <?php
     if(isset($_GET["id"])){
         echo"<link href='view/css/styleNoticiaDetalle.css' rel='stylesheet' type='text/css'>";
+        echo"<link href='view/css/styleMiniNoticiaDetalle.css' rel='stylesheet' type='text/css'>";
+
     }else{
         echo"<link href='view/css/styleEstructuraNoticia.css' rel='stylesheet' type='text/css'>";
     }
@@ -22,6 +23,7 @@
 
 	<body
 		<?php
+        session_start();
         if(isset($_COOKIE["equipo"])){
             $fondo=$_COOKIE["equipo"];
         }else{
@@ -43,7 +45,6 @@
 		?>
 >
 		<div>
-
             <div class="menu">
                 <nav>
                     <ul>
@@ -67,15 +68,15 @@
                             <li id=\"btnlogin\" class=\"activo\">Login</li>
                             <li id=\"btnregistrar\" class=\"\">registro</li>
                         </ul>
-						<form action=\"index.php\" id=\"login\">
+						<form action=\"Controller/logueado.php\" id=\"login\" method='post'>
 							<input type=\"text\" name=\"correo\" placeholder=\"E-mail\"><br/>
-							<input type=\"text\" name=\"pass\" placeholder=\"password\"><br/>
+							<input type=\"password\" name=\"pass\" placeholder=\"password\"><br/>
 							<input type=\"submit\" name=\"login\" value=\"Entrar\">
 						</form>
 
 						<form  action=\"Controller/login.php\" id=\"registro\" method=\"post\">
 							<input type=\"text\" name=\"name\" placeholder=\"nombre\"><br/>
-							<input type=\"text\" name=\"password\" placeholder=\"password\"><br/>
+							<input type=\"password\" name=\"password\" placeholder=\"password\"><br/>
 							<input type=\"text\" name=\"email\" placeholder=\"E-mail\"><br/>
 							<input type=\"submit\" name=\"registrar\" value=\"registrar\">
 						</form>";
