@@ -49,9 +49,9 @@
                 <nav>
                     <ul>
                         <li class="imagen"><a href="index.php"><img class='logo' src='View/img/pokemonDAW.png' alt='logo'></a></li>
-                        <li class="texto"><a href="#">Hacks</a></li>
-                        <li class="texto"><a href="#">Financiación</a></li>
-                        <li class="texto"><a href="#">Smartwatch</a></li>
+                        <li class="texto"  onclick="mostrarSoloCategoria('categoria1')">categoria1</li>
+                        <li class="texto"  onclick="mostrarSoloCategoria('categoria2')">categoria2</li>
+                        <li class="texto"  onclick="mostrarSoloCategoria('categoria3')">categoria3</li>
                     </ul>
                 </nav>
                 <div id=conjuntoLogin>
@@ -88,4 +88,3 @@
 				</div>
 			</div>
 		</div>
-

@@ -20,7 +20,7 @@ if (isset($_COOKIE["equipo"])) {
         echo "</div>";
     } else {
         //cargar 5 ultimsa noticias
-        require('view/pages/carousel.php');
+        //require('view/pages/carousel.php');
 
         $noticias = obtenerNoticias();
         foreach ($noticias as $noticia) {
