@@ -11,27 +11,27 @@
 	padding-bottom: 5px;
 	padding-top: 5px;
 	background-color:#ddd ;
-	border-radius: 25px; 
+	border-radius: 25px;
 }
 /*Boton para cerrar el modal box*/
 .close {
-    color: #aaa;
-    color: black;
-    float: right;
-	margin-right: 5px; 
-    font-size: 28px;
-    font-weight: bold;
+	color: #aaa;
+	color: black;
+	float: right;
+	margin-right: 5px;
+	font-size: 28px;
+	font-weight: bold;
 }
 .close:hover,
 .close:focus {
 	color: #aaa;
-    text-decoration: none;
-    cursor: pointer;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 
 #registro,#login{
-display: block;
+	display: block;
 	overflow: auto;
 	text-align: center
 }
@@ -40,15 +40,14 @@ ul{
 	display: inline-block;
 	list-style: none;
 	overflow: hidden;
-	max-height: 35px;
 }
 ul li{
-float: left;
-padding: 10px;
-background-color:#808080;
+	float: left;
+	padding: 10px;
+	background-color:#808080;
 	border-radius: 20px;
-box-shadow: 0 10px 20px rgba(0,0,0,.5);
-height:50px;}
+	height:50px;
+}
 
 .activo{
 	background-color: #ddd;
@@ -57,7 +56,7 @@ height:50px;}
 #mostrar{
 	font-size: 15pt;
 	background:#808080;
-	padding: 10px;
+	padding: 20px;
 	border-radius:  10px;
 	color: white;
 	cursor: pointer;

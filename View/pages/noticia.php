@@ -13,19 +13,19 @@ function modeloNoticia($titulo, $imagen, $fecha, $categoria, $cuerpo,$valoracion
           <p class='fechaNoticia'>".$fecha."</p>
           <p class='cuerpoNoticia'>".$cuerpo."</p>
           <div class='valoracion'>";
-          for($i=0;$i<5;$i++){
-            if($i<$valoracion){
-              echo"<span class='starSelected' >★</a>";
-            }else{
-              echo"<span class='starSelected' >☆</a>";
-            }
-          }
+    for($i=0;$i<5;$i++){
+        if($i<$valoracion){
+            echo"<span class='starSelected' >★</a>";
+        }else{
+            echo"<span class='starSelected' >☆</a>";
+        }
+    }
     echo "</div>
         </div>
     </div>";
-  }
+}
 
 
 
 
- ?>
+?>

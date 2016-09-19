@@ -1,6 +1,5 @@
 <?php
-
-  function modeloNoticia($id,$titulo, $imagen, $fecha, $categoria, $cuerpo,$valoracion){
+function modeloNoticia($id,$titulo, $imagen, $fecha, $categoria, $cuerpo,$valoracion){
     $equipo=$_COOKIE["equipo"];
     echo"
     <div class='estructuraNoticia $categoria'>
@@ -14,20 +13,16 @@
           <p class='fechaNoticia'>".$fecha."</p>
           <p class='cuerpoNoticia'>".$cuerpo."</p>
           <div class='valoracion'>";
-
-          for($i=0;$i<5;$i++){
-            if($i<$valoracion){
-              echo"<span class='starSelected' >★</a>";
-            }else{
-              echo"<span class='starSelected' >☆</a>";
-            }
-          }
+    for($i=0;$i<5;$i++){
+        if($i<$valoracion){
+            echo"<span class='starSelected' >★</a>";
+        }else{
+            echo"<span class='starSelected' >☆</a>";
+        }
+    }
     echo "</div>
         </div>
         </a>
     </div>";
-
-
-  }
-
- ?>
+}
+?>

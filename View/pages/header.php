@@ -1,59 +1,64 @@
 <html>
-	<head>
-		<meta charset = "UTF-8"/>
-	    <title>Pokémon DAW</title>
-	    <link href='view/css/header.css' rel='stylesheet' type='text/css'>
-	    <link href='view/css/footer.css' rel='stylesheet' type='text/css'>
-	    <link href='view/css/login.css' rel='stylesheet' type='text/css'>
-	   	<link href='view/css/carousel.css' rel='stylesheet' type='text/css'>
-			<?php
-			if(isset($_GET["id"])){
-				echo"<link href='view/css/styleEstructuraNoticia.css' rel='stylesheet' type='text/css'>";
-			}else{
-				echo"<link href='view/css/styleNoticiaDetalle.css' rel='stylesheet' type='text/css'>";
-			}
-			 ?>
+<head>
+    <meta charset = "UTF-8"/>
+    <title>Pokémon DAW</title>
+    <link href='view/css/header.css' rel='stylesheet' type='text/css'>
+    <link href='view/css/footer.css' rel='stylesheet' type='text/css'>
+    <link href='view/css/login.css' rel='stylesheet' type='text/css'>
+    <link href='view/css/carousel.css' rel='stylesheet' type='text/css'>
+    <?php
+    if(isset($_GET["id"])){
+        echo"<link href='view/css/styleNoticiaDetalle.css' rel='stylesheet' type='text/css'>";
+    }else{
+        echo"<link href='view/css/styleEstructuraNoticia.css' rel='stylesheet' type='text/css'>";
+    }
+    ?>
 
-	</head>
+</head>
 
 	<body
 		<?php
-			switch ($_GET["equipo"]) {
+        if(isset($_COOKIE["equipo"])){
+            $fondo=$_COOKIE["equipo"];
+        }else{
+            $fondo="null";
+        }
+			switch ($fondo) {
 				case 'rojo':
-				echo "background ='View/img/rojo.png'>";
+				echo "background ='View/img/back_rojo.png'>";
 				break;
 				case 'azul':
-				echo "background ='View/img/azul.png'>";
+				echo "background ='View/img/back_azul.png'>";
 				break;
 				case 'amarillo':
-				echo "background ='View/img/amarillo.png'>";
+				echo "background ='View/img/back_amarillo.png'>";
 				break;
 				default:
-				echo "";
+				echo "background ='View/img/amarillo.png'>";
 			}
 		?>
 		<div>
 
-		  	<a href="index.php"><img class='logo' src='view/img/pokemonDAW.png' alt='logo'></a>
-			<div class="menu">
-				<nav>
-					<ul>
-						<li><a href="#">Hacks</a></li>
-						<li><a href="#">Financiación</a></li>
-						<li><a href="#">Smartwatch</a></li>
-					</ul>
-				</nav>
-				<div id=conjuntoLogin>
-					<h5 id="mostrar">Login</h5>
-					<div id="modal" class="modal">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li class="imagen"><a href="index.php"><img class='logo' src='View/img/pokemonDAW.png' alt='logo'></a></li>
+                        <li class="texto"><a href="#">Hacks</a></li>
+                        <li class="texto"><a href="#">Financiación</a></li>
+                        <li class="texto"><a href="#">Smartwatch</a></li>
+                    </ul>
+                </nav>
+                <div id=conjuntoLogin>
+                    <h5 id="mostrar">Login</h5>
+                    <div id="modal" class="modal">
 
-						<span class="close">x</span>
+                        <span class="close">x</span>
 
-						<ul>
-							<li id="btnlogin" class="activo">Login</li>
-							<li id="btnregistrar" class="">registro</li></ul>
-
-						<form action="Controller/logueado.php" id="login">
+                        <ul>
+                            <li id="btnlogin" class="activo">Login</li>
+                            <li id="btnregistrar" class="">registro</li>
+                        </ul>
+						<form action="index.php" id="login">
 							<input type="text" name="correo" placeholder="E-mail"><br/>
 							<input type="text" name="pass" placeholder="password"><br/>
 							<input type="submit" name="login" value="Entrar">

@@ -1,29 +1,36 @@
 body {
-	margin: 0;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}  
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 .menu {
-  width: 80%;
-  float: left;
+  width: 100%;
+  height: 30%;
 }
 .logo {
-	width: 20%;
-	height: 15%;
-  float: left;
-
+  width: 100%;
+  height: 100%;
 }
-.alex {
-  float: right;
+.imagen {
+  width: 20%;
+  height: 40%;
+  background: none;
 }
-
+.imagen:hover{
+  background:none;
+}
+.texto {
+  margin: 0 70px;
+}
 ul {
   text-align: left;
-  display: inline;
-  margin: 0;
-  padding: 0;
   list-style-type: none;
 }
 ul li {
@@ -36,11 +43,11 @@ ul li {
 }
 
 ul li a {
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size:1em;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:1em;
 }
 
 ul li:hover {
@@ -54,16 +61,14 @@ ul li ul {
   top: 48px;
   right: 0;
   width: 150px;
-  box-shadow: none;
   display: none;
   opacity: 0;
   visibility: hidden;
 }
-ul li ul li { 
-  background: #555; 
-  display: block; 
+ul li ul li {
+  background: #555;
+  display: block;
   color: #fff;
-  text-shadow: 0 -1px 0 #000;
 }
 
 ul li ul li:hover {

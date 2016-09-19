@@ -1,33 +1,29 @@
 .estructuraNoticia{
   overflow:auto;
-  background-color:rgba(1, 102, 255,0.5);
-  border:5x solid white;
-  border-radius:55px;
-  padding-bottom:15px
-}
-.noticiaDerecha,.noticiaIzquierda{
-  display: block;
-  max-height: 500px;
+  background-color:rgba(255, 255, 255, 0.7);
+  width: 70%;
+  margin: 0 auto 50px;
+  border-radius: 7px 7px 7px 7px;
+
 }
 .noticiaDerecha{
-  float: left;
   width: 70%;
+  float: left;
 }
 .noticiaIzquierda{
-  max-width: 30%;
   float: left;
-  margin-top: 50px;
+  width: 30%;
 }
 .tituloNoticia{
   display: inline-block;
   margin-top: 50px;
-  margin-bottom: 2
+  margin-bottom: 2px;
 }
 
 .imgNoticia{
-  width: 90%;
+  width: 100px;
   margin-top: 45px;
-  margin-left: 5%
+  margin-left: 20%
 }
 .fechaNoticia{
   display: inline;
