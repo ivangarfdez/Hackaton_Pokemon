@@ -1,34 +1,20 @@
 <?php
 
-include_once('database.php');
+	include("database.php");
+	$conexion = new mysqli($cfg_servidor,$cfg_usuario,$cfg_password,$cfg_basephp1);
 
-class Receta extends Database {
 
-
-	//Devuelve un array con los datos
-	function articulosArray() {
-		$this->conectar();
+	function obtenerCincoUltimasNoticias(){
 		$articulos = array();
-		$sql = "SELECT id, titulo, descripcion, fecha, imagen FROM Articulos";
-		$resultado = $this->consulta($sql);
-		if($this->numeroFilas($resultado) > 0) {		
-			while ($currentArticulos = $this->datosArray($resultado)) {
-				$id[] = $currentArticulos->id;
-				$titulo[] = $currentArticulos->titulo;
-				$descripcion[] = $currentArticulos->descripcion;
-				$fecha[] = $currentArticulos->fecha;
-				$imagen[] = $currentArticulos->imagen;
-			}
-			$articulos = array("id" => $id, "titulo" => $titulo, "descripcion" => $descripcion, "fecha" => $fecha, "imagen" => $imagen);
-			$this->desconectar();
-			return $articulos;
+		$sentencia = "SELECT titulo, descripcion, fecha, imagen , nombre as categoria,  FROM Articulos litmit 5";
+		$resultado=mysqli_query($conexion, $sentencia);
+		var_dump($resultado);
+		while($articulo=mysqli_fetch_object($resultado)){
+
 		}
-		else {
-			$this->desconectar();
-			return 'No hay articulos!';
-		}	
-
-	}
-
+		mysqli_close($conexion);
 }
+
+
+obtenerCincoUltimasNoticias();
 ?>
