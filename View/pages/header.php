@@ -78,7 +78,7 @@
 							<input type=\"text\" name=\"name\" placeholder=\"nombre\"><br/>
 							<input type=\"password\" name=\"password\" placeholder=\"password\"><br/>
 							<input type=\"text\" name=\"email\" placeholder=\"E-mail\"><br/>
-							<input type=\"submit\" name=\"registrar\" value=\"registrar\">
+							<input type=\"submit\" name=\"registrar\" value=\"Registrar\">
 						</form>";
                     }
                     ?>

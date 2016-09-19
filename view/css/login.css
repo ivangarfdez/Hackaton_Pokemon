@@ -53,11 +53,12 @@ ul li{
 	background-color: #808080;
 	z-index: 2;
 }
-#mostrar{
+#mostrar, #sesionModal{
 	font-size: 15pt;
 	background:#808080;
 	padding: 20px;
 	border-radius:  10px;
 	color: white;
 	cursor: pointer;
+
 }
