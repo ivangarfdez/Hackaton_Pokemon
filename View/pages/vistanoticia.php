@@ -1,9 +1,9 @@
 <?php
 function modeloNoticia($id,$titulo, $imagen, $fecha, $categoria, $cuerpo,$valoracion){
-
+    $equipo=$_COOKIE["equipo"];
     echo"
     <div class='estructuraNoticia $categoria'>
-    <a href='./index.php?id=$id' style='color:black;text-decoration:none;'>
+    <a href='./index.php?id=$id&equipo=$equipo' style='color:black;text-decoration:none;'>
         <div class='noticiaIzquierda'>
           <img src='".$imagen."' alt='imagen no disponible' class='imgNoticia'/>
         </div>
@@ -25,30 +25,4 @@ function modeloNoticia($id,$titulo, $imagen, $fecha, $categoria, $cuerpo,$valora
         </a>
     </div>";
 }
-
-function modeloMiniNoticia($id,$titulo, $imagen, $fecha, $categoria, $cuerpo,$valoracion){
-
-    echo"<div class='estructuraMiniNoticia $categoria'>
-    <a href='./index.php?id=$id' style='color:black;text-decoration:none;'>
-        <div class='noticiaMiniIzquierda'>
-          <img src='".$imagen."' alt='imagen no disponible' class='imgMiniNoticia'/>
-        </div>
-        <div class='noticiaMiniDerecha'>
-          <h3 class='categoriaMiniNoticia'>".$categoria."</h3>
-          <h2 class='tituloMiniNoticia'>".$titulo."</h2>
-          <p class='cuerpoMiniNoticia'>".$cuerpo."</p>
-          <div class='valoracion'>";
-    for($i=0;$i<5;$i++){
-        if($i<$valoracion){
-            echo"<span class='starSelected' >★</a>";
-        }else{
-            echo"<span class='starSelected' >☆</a>";
-        }
-    }
-    echo "</div>
-        </div>
-        </a>
-    </div>";
-}
-
 ?>
