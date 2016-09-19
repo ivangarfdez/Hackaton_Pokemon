@@ -28,10 +28,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     }
     else{
-        echo "Your Login Name or Password is invalid";
+        echo "Tu email o password no es correcto.";
     }
 }else{
-    echo "error";
+    echo "Se ha producido un error";
 }
 
 ?>

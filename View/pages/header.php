@@ -57,7 +57,7 @@
                 <div id=conjuntoLogin>
                     <?php
                     if (isset($_SESSION['login_user'])){
-                        echo "<h5 id=\"sesionModal\">Bienvenido</h5>";
+                        echo "<h5 id=\"sesionModal\">Bienvenido: $_SESSION[login_user]</h5>";
                     }else{
                         echo "<h5 id=\"mostrar\">Login</h5>
                     <div id=\"modal\" class=\"modal\">
