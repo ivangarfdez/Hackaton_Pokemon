@@ -13,13 +13,12 @@ input[name="slider-select-element"] {
 }
 
 #slider-container {
-
   height: 100%;
   margin-bottom: 200px;
   overflow: hidden;
   text-align: left;
   width: 80%;
-  margin-left: 120px;
+  margin-left: 10%;
 
 }
 
@@ -53,6 +52,10 @@ input[name="slider-select-element"] {
 #element3:checked ~ #slider-arrows label:nth-child(1) {
   display: block;
   float: right;
+  position:absolute;
+  right: 5%;
+  top:450px;
+  
 }
 
 #element1:checked ~ #slider-arrows label:nth-child(3),
@@ -60,6 +63,9 @@ input[name="slider-select-element"] {
 #element3:checked ~ #slider-arrows label:nth-child(2) {
   display: block;
   float: left;
+  position:absolute;
+  left: 5%;
+  top:450px;
 }
 
 #element1:checked ~ #slider-arrows label:nth-child(2):before,

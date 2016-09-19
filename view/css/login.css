@@ -44,13 +44,13 @@ ul{
 ul li{
 	float: left;
 	padding: 10px;
-	background-color:#808080;
+	background-color:#ddd;
 	border-radius: 20px;
 	height:50px;
 }
 
 .activo{
-	background-color: #ddd;
+	background-color: #808080;
 	z-index: 2;
 }
 #mostrar{

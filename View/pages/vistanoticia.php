@@ -28,14 +28,12 @@ function modeloNoticia($id,$titulo, $imagen, $fecha, $categoria, $cuerpo,$valora
 function modeloMiniNoticia($id,$titulo, $imagen, $fecha, $categoria, $cuerpo,$valoracion){
     echo"
     <div class='estructuraMiniNoticia $categoria'>
-    <a href='./index.php?id=$id' style='color:black;text-decoration:none;'>
+
         <div class='noticiaMiniIzquierda'>
           <img src='".$imagen."' alt='imagen no disponible' class='imgMiniNoticia'/>
         </div>
         <div class='noticiaMiniDerecha'>
-          <h3 class='categoriaMiniNoticia'>".$categoria."</h3>
           <h2 class='tituloMiniNoticia'>".$titulo."</h2>
-          <p class='cuerpoMiniNoticia'>".$cuerpo."</p>
           <div class='valoracion'>";
     for($i=0;$i<5;$i++){
         if($i<$valoracion){
@@ -46,7 +44,6 @@ function modeloMiniNoticia($id,$titulo, $imagen, $fecha, $categoria, $cuerpo,$va
     }
     echo "</div>
         </div>
-        </a>
     </div>";
 }
 ?>
