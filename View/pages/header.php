@@ -46,9 +46,9 @@
 							<li id="btnlogin" class="activo">Login</li>
 							<li id="btnregistrar" class="">registro</li></ul>
 
-						<form action="asdg.php" id="login">
-							<input type="text" name="loginemail" placeholder="E-mail"><br/>
-							<input type="text" name="loginpassword" placeholder="password"><br/>
+						<form action="Controller/logueado.php" id="login">
+							<input type="text" name="correo" placeholder="E-mail"><br/>
+							<input type="text" name="pass" placeholder="password"><br/>
 							<input type="submit" name="login" value="Entrar">
 						</form>
 
