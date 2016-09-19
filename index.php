@@ -4,12 +4,15 @@
 	require('Model/datos.php');
 	require('view/pages/header.php');
 	require('view/pages/carousel.php');
+	require('view/pages/vistanoticia.php');
 
 //cargar 5 ultimsa noticias
 
 $noticias=obtenerCincoUltimasNoticias();
-foreach ($noticia => $noticias) {
-	modeloNoticia($noticia.titulo,$noticia.imagen,$noticia.fecha,$noticia.categoria,$noticia.descripcion,$noticia.valoracion);
+
+foreach ($noticias as $noticia) {
+
+modeloNoticia($noticia["titulo"],$noticia["imagen"],$noticia["fecha"],$noticia["nombre"],$noticia["descripcion"],$noticia["valoracion"]);
 }
 	require('view/pages/footer.php');
 	}else {

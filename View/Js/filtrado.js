@@ -9,5 +9,4 @@ function mostrarSoloCategoria(nombreCategoria){
     }
   }
 
-
 }
